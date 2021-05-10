@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounak's WEBPAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="https://png.pngitem.com/pimgs/s/145-1455744_digi-creations-logo-web-design-logo-free-hd.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://www.instagram.com/itz_rony07/" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>DESIGN YOUR WEBPAGE</h1>
+            <b><i><P>Come fall in learn with and glow your FUTURE with us<br> Many students achieve their goals <br>WHY YOU DELAY?</P></i></b>
+            <div>
+                <button type="button"> <span></span> LEARN MORE</button>
+                <button type="button"> <span></span> JOIN US</button>
+                <button type="button"><span></span>ONLINE COURSES</button>
+                
+            </div>
+
+
+           
+        </div>
+    
+    </div>
+</body>
+</html>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75)),rgba(0,0,0,0.75),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+  width: 123px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: cyan;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: darkkhaki;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid yellow;
+  background: transparent;
+  color: palevioletred;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: peachpuff;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
+.banner {
+  background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/03/computer-with-stylus.jpg?auto=format&q=60&w=1830&h=1372.5&fit=crop&crop=faces);
+  background-repeat: no-repeat;
+}
+
+</style>
